@@ -26,7 +26,7 @@ uint8_t height ;
 void lcdWriteCommand_bis(uint8_t cmdOut)
 { // Write a command to Display
    DC_ON; 		/*DC on = command set A0 low, select Command mode DisplayD_C = 0 for this byte*/
-   SPI2_Send(cmdOut) ;  // Clock out command bits
+   SPI2_Send(cmdOut) ;  
    DC_OFF;
    }
 
@@ -43,7 +43,7 @@ void lcdWriteData_bis(uint8_t dataByte1, uint8_t dataByte2)
 }
 
 
-// Initialise the display with the require screen orientation
+// Initialise the display 
 void lcdInitialize(void)//void lcdInitialise(uint8_t orientation)
 {   
 	// Hardware reset the LCD on turn MCU
