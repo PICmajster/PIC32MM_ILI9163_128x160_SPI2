@@ -38,8 +38,8 @@ void lcdWriteParameter_bis(uint8_t data)
 void lcdWriteData_bis(uint8_t dataByte1, uint8_t dataByte2)
 {
 	DC_OFF;
-    SPI2_Send(dataByte2);
-	SPI2_Send(dataByte1);
+    SPI2_Send(dataByte1);
+	SPI2_Send(dataByte2);
 }
 
 
