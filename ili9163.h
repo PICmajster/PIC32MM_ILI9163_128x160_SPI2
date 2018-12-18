@@ -35,7 +35,7 @@
  */
 
 // RGB565 Format converter
-#define RGB565(r,g,b) (((uint16_t)r & 0x00F8) << 8) | (((uint16_t)g & 0x00FC) << 3) | (((uint16_t)b & 0x00F8) >> 3)  
+#define RGB565(b,g,r) (((uint16_t)r & 0x00F8) << 8) | (((uint16_t)g & 0x00FC) << 3) | (((uint16_t)b & 0x00F8) >> 3)  
 
 //==== STANDARD HTML/CSS/RGB COLOR NAMES BELOW =====
 // Reds
